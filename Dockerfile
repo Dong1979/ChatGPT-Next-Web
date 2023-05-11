@@ -37,7 +37,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/.next/server ./.next/server
-COPY --from=builder /app/app/icons ./5WiSC0Mg4S.txt
+COPY --from=builder /app/public/5WiSC0Mg4S.txt ./.next/
 
 EXPOSE 3000
 
